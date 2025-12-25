@@ -768,6 +768,118 @@ section,
 .about .about-me p {
   font-size: 18px;
 }
+/* ================================
+   SERVICES SECTION – CLICKABLE UI
+================================ */
+
+.services .service-item {
+  background: var(--surface-color);
+  border-radius: 16px;
+  padding: 35px 25px;
+  height: 100%;
+  box-shadow: var(--shadow-md);
+  transition: all 0.35s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+/* Hover lift + glow */
+.services .service-item:hover {
+  transform: translateY(-10px);
+  box-shadow: var(--shadow-lg);
+}
+
+/* Accent border on hover */
+.services .service-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  transition: 0.35s ease;
+}
+
+.services .service-item:hover::before {
+  border-color: var(--accent-color);
+}
+
+/* Icon styling */
+.services .service-item .icon {
+  width: 70px;
+  height: 70px;
+  background: color-mix(in srgb, var(--accent-color), transparent 85%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: 0.35s ease;
+}
+
+.services .service-item .icon i {
+  font-size: 30px;
+  color: var(--accent-color);
+  transition: 0.35s ease;
+}
+
+/* Icon animation on hover */
+.services .service-item:hover .icon {
+  background: var(--accent-color);
+}
+
+.services .service-item:hover .icon i {
+  color: var(--contrast-color);
+  transform: scale(1.1);
+}
+
+/* Headings */
+.services .service-item h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  transition: 0.3s ease;
+}
+
+.services .service-item:hover h3 {
+  color: var(--accent-color);
+}
+
+/* Description */
+.services .service-item p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: color-mix(in srgb, var(--default-color), transparent 20%);
+}
+
+/* Make entire card clickable */
+.services .service-item a.stretched-link {
+  position: static;
+}
+
+/* Click hint (subtle arrow) */
+.services .service-item::after {
+  content: "→";
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+  font-size: 22px;
+  opacity: 0;
+  color: var(--accent-color);
+  transform: translateX(-10px);
+  transition: 0.3s ease;
+}
+
+.services .service-item:hover::after {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* Mobile spacing */
+@media (max-width: 767px) {
+  .services .service-item {
+    padding: 30px 22px;
+  }
+}
 
 /*--------------------------------------------------------------
 # Resume Section
