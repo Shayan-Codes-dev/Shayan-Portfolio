@@ -145,8 +145,6 @@ h6 {
 
 
 
-/*// Border Animation END//*/
-
 /* PHP Email Form Messages
 ------------------------------*/
 .php-email-form .error-message {
@@ -201,23 +199,6 @@ h6 {
 .services-item{
   position: relative;
 }
-/* .services-item::after{
-  content: '';
-  background:var(--accent-color);
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 0;
-  height: 100%;
-  transition: 1s;
-  border-radius: 15px;
-}
-.services-item:hover::after{
-  width: 100%;
-}
-.services-item:hover{
-  color: var(--surface-color);
-} */
 /*--------------------------------------------------------------
 # Global Header
 --------------------------------------------------------------*/
@@ -439,29 +420,6 @@ h6 {
   display: block;
   background-color: rgba(33, 37, 41, 0.03);
 }
-
-/*--------------------------------------------------------------
-# Global Footer
---------------------------------------------------------------*/
-.footer {
-  color: var(--default-color);
-  background-color: var(--background-color);
-  font-size: 14px;
-  padding: 40px 0;
-  position: relative;
-  border-top: 1px solid color-mix(in srgb, var(--default-color), transparent 90%);
-}
-
-.footer .copyright p {
-  margin-bottom: 0;
-}
-
-.footer .credits {
-  margin-top: 4px;
-  font-size: 13px;
-  text-align: center;
-}
-
 
 /*--------------------------------------------------------------
 # Global Footer
@@ -785,12 +743,6 @@ section,
   font-weight: 600;
   font-size: 0.95rem;
   display: block;
-  /* margin-top: 6px; */
-}
-
-/* Make icons colored on hover too */
-.skill-badge:hover i {
-  color: white !important;
 }
 
 .about .about-me h4 {
@@ -874,77 +826,6 @@ section,
   top: 0;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
-}
-
-/*--------------------------------------------------------------
-# Services Section
---------------------------------------------------------------*/
-.about .container {
-  background-color: var(--surface-color);
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-  padding: 10px;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 5px;
-  justify-content: center;
-}
-
-.skill-badge {
-  background: white;
-  padding: 18px 24px;
-  border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
-  transition: all 0.3s ease;
-  min-width: 110px;
-}
-
-.skill-badge:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 15px 30px rgba(24, 210, 110, 0.15);
-  background: var(--default-color);
-  color: var(--accent-hover-color) !important;
-}
-
-.skill-badge i {
-  font-size: 2.2rem;
-  margin-bottom: 8px;
-  display: block;
-}
-
-.skill-badge span {
-  font-weight: 600;
-  font-size: 0.95rem;
-  display: block;
-}
-
-.skill-badge:hover i {
-  color: white !important;
-}
-
-.about .about-me h4 {
-  font-size: 28px;
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 30px;
-  font-weight: 700;
-}
-
-.about .about-me h4:after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 64px;
-  height: 3px;
-  background: var(--accent-color);
-  left: 0;
-  bottom: 0;
-}
-
-.about .about-me p {
-  font-size: 18px;
 }
 
 /*--------------------------------------------------------------

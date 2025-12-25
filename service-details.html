@@ -4,12 +4,12 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Service Details - DevFolio Bootstrap Template</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>Full-Stack Development Service - Muhammad Shayan</title>
+  <meta name="description" content="Professional full-stack development services">
+  <meta name="keywords" content="full-stack development, web development">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/favicon.ico" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -36,46 +36,34 @@
   ======================================================== -->
 </head>
 
-<body class="service-details-page">
+<body class="service-details-page index-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
+  <header id="header" class="header dark-background d-flex flex-column">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-      <a href="index.html" class="logo d-flex align-items-center">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">DevFolio</h1>
-      </a>
-
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home<br></a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="#">Dropdown 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="#">Deep Dropdown 1</a></li>
-                  <li><a href="#">Deep Dropdown 2</a></li>
-                  <li><a href="#">Deep Dropdown 3</a></li>
-                  <li><a href="#">Deep Dropdown 4</a></li>
-                  <li><a href="#">Deep Dropdown 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Dropdown 2</a></li>
-              <li><a href="#">Dropdown 3</a></li>
-              <li><a href="#">Dropdown 4</a></li>
-            </ul>
-          </li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
+    <div class="profile-img">
+      <img src="assets/img/profile-img.jpg" alt="" class="img-fluid rounded-circle" />
     </div>
+
+    <a href="index.html" class="logo d-flex align-items-center justify-content-center">
+      <h1 class="sitename">Muhammad Shayan</h1>
+    </a>
+
+    <div class="social-links text-center">
+      <a target="_blank" href="https://x.com/callmeeshayan" class="twitter"><i class="bi bi-twitter-x"></i></a>
+      <a target="_blank" href="https://instagram.com/callmee.shayan" class="instagram"><i class="bi bi-instagram"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/muhammad-shayan-b58b74379/" class="linkedin"><i class="bi bi-linkedin"></i></a>
+    </div>
+
+    <nav id="navmenu" class="navmenu">
+      <ul>
+        <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+        <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+        <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
+        <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main class="main">
@@ -83,11 +71,12 @@
     <!-- Page Title -->
     <div class="page-title" data-aos="fade">
       <div class="container d-lg-flex justify-content-between align-items-center">
-        <h1 class="mb-2 mb-lg-0">Service Details</h1>
+        <h1 class="mb-2 mb-lg-0">Full-Stack Development</h1>
         <nav class="breadcrumbs">
           <ol>
             <li><a href="index.html">Home</a></li>
-            <li class="current">Service Details</li>
+            <li><a href="index.html#services">Services</a></li>
+            <li class="current">Full-Stack Development</li>
           </ol>
         </nav>
       </div>
@@ -102,34 +91,45 @@
 
           <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
             <div class="services-list">
-              <a href="#" class="active">Web Design</a>
-              <a href="#">Software Development</a>
-              <a href="#">Product Management</a>
-              <a href="#">Graphic Design</a>
-              <a href="#">Marketing</a>
+              <a href="service-details.html?service=fullstack-development">Full-Stack Development</a>
+              <a href="service-details.html?service=web-design">Web Design</a>
+              <a href="service-details.html?service=cms-ecommerce">CMS & E-commerce</a>
+              <a href="service-details.html?service=graphic-design">Graphic Design</a>
+              <a href="service-details.html?service=database-management">Database Management</a>
             </div>
 
-            <h4>Enim qui eos rerum in delectus</h4>
-            <p>Nam voluptatem quasi numquam quas fugiat ex temporibus quo est. Quia aut quam quod facere ut non occaecati ut aut. Nesciunt mollitia illum tempore corrupti sed eum reiciendis. Maxime modi rerum.</p>
+            <h4 data-service-title>Complete Web Solutions</h4>
+            <p>Select a service from the list to view details.</p>
           </div>
 
           <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-            <img src="assets/img/services.jpg" alt="" class="img-fluid services-img">
-            <h3>Temporibus et in vero dicta aut eius lidero plastis trand lined voluptas dolorem ut voluptas</h3>
-            <p>
-              Blanditiis voluptate odit ex error ea sed officiis deserunt. Cupiditate non consequatur et doloremque consequuntur. Accusantium labore reprehenderit error temporibus saepe perferendis fuga doloribus vero. Qui omnis quo sit. Dolorem architecto eum et quos deleniti officia qui.
-            </p>
-            <ul>
-              <li><i class="bi bi-check-circle"></i> <span>Aut eum totam accusantium voluptatem.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Assumenda et porro nisi nihil nesciunt voluptatibus.</span></li>
-              <li><i class="bi bi-check-circle"></i> <span>Ullamco laboris nisi ut aliquip ex ea</span></li>
+            <img src="assets/img/portfolio/fullstack-1.png" alt="Service" class="img-fluid services-img" data-service-image>
+            <h3 data-service-main-title>Full-Stack Development</h3>
+            <div data-service-description>
+              <p>Full-stack development means I handle every layer of your web application. From designing responsive, intuitive user interfaces to architecting scalable backend systems, I deliver complete solutions that work seamlessly.</p>
+            </div>
+            <ul data-service-features>
+              <li><i class="bi bi-check-circle"></i> <span>Frontend: HTML5, CSS3, JavaScript, Bootstrap, React</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Backend: PHP, Node.js with Express, RESTful APIs</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Database Design: MySQL, efficient query optimization</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Security: Best practices, authentication, data protection</span></li>
+              <li><i class="bi bi-check-circle"></i> <span>Performance: Fast load times, optimized code, caching strategies</span></li>
             </ul>
+            <h4>Technology Stack</h4>
+            <ul data-service-tech>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Frontend:</strong> HTML5, CSS3, Bootstrap, Tailwind CSS, JavaScript, React</span></li>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Backend:</strong> PHP, Node.js/Express, REST APIs</span></li>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Databases:</strong> MySQL, efficient relational design</span></li>
+              <li><i class="bi bi-check-circle"></i> <span><strong>Tools:</strong> Git, GitHub, responsive design principles</span></li>
+            </ul>
+            <h4>Why Choose This Service?</h4>
             <p>
-              Est reprehenderit voluptatem necessitatibus asperiores neque sed ea illo. Deleniti quam sequi optio iste veniam repellat odit. Aut pariatur itaque nesciunt fuga.
+              A single developer understanding both frontend and backend creates better communication, faster development cycles, and more cohesive solutions. I ensure your application works flawlessly across all components.
             </p>
             <p>
-              Sunt rem odit accusantium omnis perspiciatis officia. Laboriosam aut consequuntur recusandae mollitia doloremque est architecto cupiditate ullam. Quia est ut occaecati fuga. Distinctio ex repellendus eveniet velit sint quia sapiente cumque. Et ipsa perferendis ut nihil. Laboriosam vel voluptates tenetur nostrum. Eaque iusto cupiditate et totam et quia dolorum in. Sunt molestiae ipsum at consequatur vero. Architecto ut pariatur autem ad non cumque nesciunt qui maxime. Sunt eum quia impedit dolore alias explicabo ea.
+              Whether you need a student management system, e-commerce platform, custom business application, or any other web solution, I have the skills to deliver. Let's discuss your project and bring your vision to life.
             </p>
+            <div data-related-projects></div>
           </div>
 
         </div>
@@ -141,26 +141,21 @@
   </main>
 
   <footer id="footer" class="footer accent-background">
-
     <div class="container">
-      <div class="copyright text-center ">
-        <p>© <span>Copyright</span> <strong class="px-1 sitename">DevFolio</strong> <span>All Rights Reserved</span></p>
+      <div class=" text-center">
+        <p>
+          My Social Links
+        </p>
       </div>
       <div class="social-links d-flex justify-content-center">
-        <a href=""><i class="bi bi-twitter-x"></i></a>
-        <a href=""><i class="bi bi-facebook"></i></a>
-        <a href=""><i class="bi bi-instagram"></i></a>
-        <a href=""><i class="bi bi-linkedin"></i></a>
+        <a href="https://x.com/callmeeshayan" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://instagram.com/callmee.shayan" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-shayan-b58b74379/" target="_blank"><i class="bi bi-linkedin"></i></a>
       </div>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com" target="_blank">ThemeWagon</a>
+        Designed by <a href="#"><span class="text-info">Hassan Bashir</span></a>, Developed by <span class="text-info">Muhammad Shayan</span>
       </div>
     </div>
-
   </footer>
 
   <!-- Scroll Top -->
